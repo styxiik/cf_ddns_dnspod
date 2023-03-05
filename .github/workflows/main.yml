@@ -41,7 +41,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: false
-          tags: ghcr.io/styxiik/ddcf:latest
+          tags: ghcr.io/styxiik/ddcf-asia:latest
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
@@ -50,7 +50,7 @@ jobs:
       - name: Publish to DockerHub
         uses: elgohr/Publish-Docker-Github-Action@v4
         with:
-          name: styxiik/ddcf
+          name: styxiik/ddcf-aisa
           username: styxiik
           password: ${{ secrets.DOCKER_TOKEN }}
           platforms: linux/amd64,linux/arm64
