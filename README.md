@@ -1,4 +1,6 @@
-# ddcf
+# ddcf-asia
+
+区别于主分支，该分支只测试亚洲地区cloudflare ip地址，包含HK/SG/JP/KR/VN/MY
 
 使用XIU2/CloudflareSpeedTest项目，自动检测cf的本地优选ip，并通过dnspod大陆版ddns修改域名的dns解析记录。
 

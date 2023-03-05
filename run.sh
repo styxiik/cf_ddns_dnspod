@@ -28,7 +28,7 @@ else
 fi && \
    
 rm -f /root/result.csv && \
-/root/CloudflareST -dn 10 -tl 300 -tll 2 -sl 5 -p 1 -f /root/ip.txt >/dev/null 2>&1 && \
+/root/CloudflareST -allip -dn 10 -tl 300 -tll 2 -sl 5 -p 1 -f /root/ip.txt >/dev/null 2>&1 && \
 target_ip=`grep -s -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" /root/result.csv| head -n 1` && \
 if [ ! -n "$target_ip" ]; then
    echo "fail to found a target ip"
