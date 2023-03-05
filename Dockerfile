@@ -18,7 +18,7 @@ RUN apk add --no-cache wget jq grep curl tar gzip bind-tools tzdata \
  && chmod +x CloudflareST run.sh startup.sh \
  && wget -O HK.tmp https://raw.githubusercontent.com/styxiik/cf_ip_country/main/Hong%20Kong.txt \
  && wget -O SG.tmp https://raw.githubusercontent.com/styxiik/cf_ip_country/main/Singapore.txt \
- && wget -O JP.tmp https://raw.githubusercontent.com/styxiik/cf_ip_country/main/Singapore.txt \
+ && wget -O JP.tmp https://raw.githubusercontent.com/styxiik/cf_ip_country/main/Japan.txt \
  && wget -O MY.tmp https://raw.githubusercontent.com/styxiik/cf_ip_country/main/Malaysia.txt \
  && wget -O KR.tmp https://raw.githubusercontent.com/styxiik/cf_ip_country/main/South%20Korea.txt \
  && wget -O CNTW.tmp https://raw.githubusercontent.com/styxiik/cf_ip_country/main/Taiwan.txt \
