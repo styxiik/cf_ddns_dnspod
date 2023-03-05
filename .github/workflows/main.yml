@@ -50,7 +50,7 @@ jobs:
       - name: Publish to DockerHub
         uses: elgohr/Publish-Docker-Github-Action@v4
         with:
-          name: styxiik/ddcf-aisa
+          name: styxiik/ddcf-asia
           username: styxiik
           password: ${{ secrets.DOCKER_TOKEN }}
           platforms: linux/amd64,linux/arm64
