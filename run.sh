@@ -11,7 +11,7 @@ echo "Now ip of ${DOMAIN} is ---${NOW_IP}---" && \
 echo ${NOW_IP} > /root/nowIp.txt && \
 # check now ip useable
 rm -f /root/nowIp.csv && \
-/root/CloudflareST -dn 10 -tl 300 -tll 2 -sl 5 -p 1 -f /root/nowIp.txt -o "/root/nowIp.csv" >/dev/null 2>&1 && \
+/root/CloudflareST -url "https://gh.con.sh/https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v2.21.12/Waifu2x-Extension-GUI-v2.21.12-Portable.7z" -dn 10 -tl 300 -tll 2 -sl 5 -p 1 -f /root/nowIp.txt -o "/root/nowIp.csv" >/dev/null 2>&1 && \
 test_ip=`grep -s -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" /root/nowIp.csv| head -n 1` && \
 if [ ! -f "/root/nowIp.csv" ]; then
    test_speed=0.00
@@ -28,7 +28,7 @@ else
 fi && \
    
 rm -f /root/result.csv && \
-/root/CloudflareST -dn 10 -tl 300 -tll 2 -sl 5 -p 1 -f /root/ip.txt >/dev/null 2>&1 && \
+/root/CloudflareST -url "https://gh.con.sh/https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v2.21.12/Waifu2x-Extension-GUI-v2.21.12-Portable.7z" -dn 10 -tl 300 -tll 2 -sl 5 -p 1 -f /root/ip.txt >/dev/null 2>&1 && \
 target_ip=`grep -s -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" /root/result.csv| head -n 1` && \
 if [ ! -f "/root/result.csv" ]; then
    target_speed=0.00
