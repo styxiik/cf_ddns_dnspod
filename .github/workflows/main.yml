@@ -48,7 +48,7 @@ jobs:
           # tags: ${{ steps.meta.outputs.tags }}
           
       - name: Publish to DockerHub
-        uses: elgohr/Publish-Docker-Github-Action@v4
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: styxiik/ddcf
           username: styxiik
